@@ -1,8 +1,7 @@
 #Querio Scheduler
 A scheduler for retraining saved [Querio](https://github.com/quer-io/quer.io) models periodically.
-
 ##Installation
-* If you don't have Querio package, install it from [https://github.com/quer-io/quer.io](https://github.com/quer-io/quer.io).
+* If you don't have the Querio package, install it from [https://github.com/quer-io/quer.io](https://github.com/quer-io/quer.io).
 * In a console window, install requirements with
  ~~~~
  pip install -r requirements.txt
@@ -11,10 +10,8 @@ A scheduler for retraining saved [Querio](https://github.com/quer-io/quer.io) mo
 The scheduler can be given the preferred time to retrain and the path to saved models.  
 * The default time is 02:00 and the default path is the current directory. 
 * Path is formatted with forward slashes: "path/to/models".
-* Time is input in HH:MM format: "23:04".
-
+* Time is input in HH:MM format: "23:04".  
 When running, the scheduler can be stopped by pressing CTRL + C.  
-
 ###As a script:
 In a console window, run with
  ~~~~
@@ -33,7 +30,6 @@ In a console window, run with
  python scheduler.py -t "23:04" -p "/path/to/models"
  ~~~~
 ###As a python module:
-
 In a Python shell, import and initialize the scheduler with
  ~~~~
  import querio_scheduler as qs
@@ -61,4 +57,3 @@ The parameters can be given on init
  ~~~~
  scheduler.retrain()
  ~~~~
- 
